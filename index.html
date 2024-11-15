@@ -1,17 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alexchandiary</title>
+    <title>Outfits</title>
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 引入主樣式表 -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>11/11 outfits</h1>
-    <ul>
-        <li><a href="https://www.icons.com/official-ballon-dor-marco-van-basten-back-signed-netherlands-1988-home-shirt-in-hero-frame-option-1-35921.html">Holland Jersey</a></li>
-        <li><a href="https://www.paradiseclothingco.com/products/island-life-mens-shirt-in-blue-1">Island Life Mens Shirt in Blue</a></li>
-        <li><a href="https://www.uniqlo.com.hk/zh_HK/product-detail.html?productCode=u0000000050188">black</a></li>
-        <li><a href="https://www.uniqlo.com.hk/zh_HK/product-detail.html?productCode=u0000000028261&searchFlag=true">skin</a></li>
-    </ul>
+    <header class="header">
+        <h1>Outfits</h1>
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">產品</a></li>
+                <li><a href="mail.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="product-section">
+            <h2>推薦商品</h2>
+            <ul class="product-list">
+                <li>
+                    <a href="https://www.icons.com/official-ballon-dor-marco-van-basten-back-signed-netherlands-1988-home-shirt-in-hero-frame-option-1-35921.html">
+                        <img src="images/holland_jersey_large.jpg" alt="Holland Jersey" class="product-image" loading="lazy">
+                        Holland Jersey
+                    </a>
+                    <button class="details-button" data-product="1">查看詳情</button>
+                </li>
+                <li>
+                    <a href="https://www.paradiseclothingco.com/products/island-life-mens-shirt-in-blue-1">
+                        <img src="images/island_life_shirt_large.jpg" alt="Island Life Mens Shirt in Blue" class="product-image">
+                        Island Life Mens Shirt in Blue
+                    </a>
+                    <button class="details-button" data-product="2">查看詳情</button>
+                </li>
+                <li>
+                    <a href="https://www.uniqlo.com.hk/zh_HK/product-detail.html?productCode=u0000000051050">
+                        <img src="images/black_top_large.jpg" alt="黑色上衣" class="product-image">
+                        黑色上衣
+                    </a>
+                    <button class="details-button" data-product="3">查看詳情</button>
+                </li>
+                <li>
+                    <a href="https://www.uniqlo.com.hk/zh_HK/product-detail.html?productCode=u0000000050188">
+                        <img src="images/black_pants_large.jpg" alt="黑色褲子" class="product-image">
+                        黑色褲子
+                    </a>
+                    <button class="details-button" data-product="4">查看詳情</button>
+                </li>
+                <li>
+                    <a href="https://www.uniqlo.com.hk/zh_HK/product-detail.html?productCode=u0000000028261&searchFlag=true">
+                        <img src="images/skin_top_large.jpg" alt="皮膚色上衣" class="product-image">
+                        皮膚色上衣
+                    </a>
+                    <button class="details-button" data-product="5">查看詳情</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2><a href="mail.html">聯繫我們</a></h2>
+        <p>&copy; 2024Outfits. 版權所有。</p>
+    </footer>
+
+    <!-- 模態框結構 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">產品詳情</h2>
+            <img id="modal-image" src="" alt="產品圖片" class="modal-image">
+            <p id="modal-description">這裡是產品詳情描述。</p>
+        </div>
+    </div>
+
+    <!-- 引入 JavaScript 文件 -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
