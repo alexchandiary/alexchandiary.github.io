@@ -1,0 +1,121 @@
+*{margin:0;padding:0;}
+#banner .owl-dots {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+#banner .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+}
+
+#banner .owl-dots .owl-dot.active span,
+#banner .owl-dots .owl-dot:hover span {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+#intro {
+    padding-top: 100px;
+}
+
+#intro .benefit-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#intro .section-desc {
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+}
+
+#intro .benefit-icon {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#activity {
+    padding: 100px 0;
+}
+
+#activity .course-block .course-item .course-content .course-title a:hover {
+    color: var(--minor-color);
+}
+
+#activity .course-label-text {
+    font-weight: 500;
+}
+
+#index-modal {
+    max-width: 700px;
+    padding: 30px;
+}
+
+#index-modal .btn-close {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#index-modal .btn-close>a[data-fancybox-close] {
+    display: inline-block;
+    padding: 0 15px;
+    height: 38px;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    line-height: 35px;
+    border: 1px solid var(--minor-color);
+    color: #fff;
+    background-color: var(--minor-color);
+    transition: all .25s ease;
+    box-shadow: none;
+    outline: none;
+    white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+    #intro {
+        padding-top: 0;
+        padding-bottom: 0;
+    }    
+}
+
+@media (max-width: 480px) {
+    .section-heading .section-title {
+        font-size: 2rem;
+    }
+
+    #banner .owl-dots {
+        position: relative;
+    }
+
+    #activity .course-item .course-content .course-title {
+        font-size: 1.35rem;
+    }
+
+    #intro .benefit-heading {
+        padding-top: 60px;
+    }
+
+    #intro .benefit-img {
+        margin-top: 20px;
+    }
+
+    #activity {
+        padding: 80px 0;
+    }
+
+    #index-modal {
+        padding: 25px 20px;
+    }
+}
